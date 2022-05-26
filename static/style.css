@@ -1,0 +1,168 @@
+#dnaVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 13%;
+    left: 3%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 60%;
+    padding: 35px;
+}
+
+.main {
+    visibility: hidden;
+    position: fixed;
+    bottom: 5%;
+    height: 80%;
+    left: 17.5%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 55%;
+    padding: 35px;
+}
+
+#warranty {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    font-size: 15px;
+}
+
+#sequenceInput {
+    position: absolute;
+    overflow: scroll;
+    width: 30%;
+    height: 60%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f2f2;
+    font-size: 16px;
+    resize: none;
+}
+
+#sequenceOutput {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    left: 60%;
+    overflow: scroll;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f2f2;
+    font-size: 16px;
+    resize: none;
+}
+
+#optimize {
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    height: 15%;
+    width: 15%;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: rgba(25, 142, 27, 0.99);
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+div.content {
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+#coliText {
+    margin-left: 10rem;
+}
+
+#example {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    height: 7%;
+    width: 40%;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 4px;
+    font-size: 16px;
+    border: none;
+    margin: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+

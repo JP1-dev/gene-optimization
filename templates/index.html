@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Codon Optimizer</title>
+    <link href="static/style.css" rel="stylesheet">
+    <script src="static/main.js"></script>
+</head>
+
+<body>
+
+<video autoplay muted loop id="dnaVideo">
+    <source src="static/dna_middle.mp4" type="video/mp4">
+</video>
+
+<div class="main" id="main">
+    <div class="row">
+        <div class="col"><h4>Human DNA-sequence:</h4></div>
+        <div class="col" id="coliText"><h4>Sequence optimized for</h4>
+            <div class="dropdown">
+                <button class="dropbtn">Escherichia Coli K12</button>
+                <div class="dropdown-content">
+                    <a href="#">Escherichia Coli K12</a>
+                    <a href="#">Staphylococcus Aureus</a>
+                    <a href="#">Escherichia Coli BL21</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <textarea id="sequenceInput" cols="50" rows="10"></textarea>
+    <textarea id="sequenceOutput" cols="50" rows="10" readonly="true"></textarea>
+    <button id="optimize" onclick="optimize()">optimize &#128137;</button>
+    <button id="example" onclick="example()">CLICK for an example (Hemoglobin)</button>
+</div>
+
+<p id="warranty">no warranty of any results</p>
+
+
+<div class="content" id="helloDiv">
+    <h1>Codon optimizer</h1>
+    <p>This tool can be used to optimize a human DNA-sequence for Escherichia Coli K12 (bacteria, specialized for
+        protein production). <br><br> 1) enter DNA-sequence (or click "example") <br> 2) optimize</p>
+    <button id="myBtn" onclick="start()">Let's go</button>
+</div>
+
+
+</body>
+</html>

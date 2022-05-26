@@ -1,0 +1,179 @@
+{
+  "DNA": {
+    "CGT": ["alanine", "Ala", "A"],
+    "CGG": ["alanine", "Ala", "A"],
+    "CGC": ["alanine", "Ala", "A"],
+    "CGA": ["alanine", "Ala", "A"],
+
+    "TCT": ["arginine", "Arg", "R"],
+    "TCC": ["arginine", "Arg", "R"],
+    "GCT": ["arginine", "Arg", "R"],
+    "GCG": ["arginine", "Arg", "R"],
+    "GCC": ["arginine", "Arg", "R"],
+    "GCA": ["arginine", "Arg", "R"],
+
+    "TTG": ["asparagine", "Asn", "N"],
+    "TTA": ["asparagine", "Asn", "N"],
+
+    "CTG": ["aspartic acid", "Asp", "D"],
+    "CTA": ["aspartic acid", "Asp", "D"],
+
+    "ACG": ["cysteine", "Cys", "C"],
+    "ACA": ["cysteine", "Cys", "C"],
+
+    "ATT": ["ochre", "TERM", " "],
+    "ATC": ["amber", "TERM", " "],
+    "ACT": ["umber", "TERM", " "],
+
+    "GTT": ["glutamine", "Gln", "Q"],
+    "GTC": ["glutamine", "Gln", "Q"],
+
+    "CTT": ["glutamic acid", "Glu", "E"],
+    "CTC": ["glutamic acid", "Glu", "E"],
+
+    "CCT": ["glycine", "Gly", "G"],
+    "CCG": ["glycine", "Gly", "G"],
+    "CCC": ["glycine", "Gly", "G"],
+    "CCA": ["glycine", "Gly", "G"],
+
+    "GTG": ["histidine", "His", "H"],
+    "GTA": ["histidine", "His", "H"],
+
+    "TAT": ["isoleucine", "Ile", "I"],
+    "TAG": ["isoleucine", "Ile", "I"],
+    "TAA": ["isoleucine", "Ile", "I"],
+
+    "AAT": ["leucine", "Leu", "L"],
+    "AAC": ["leucine", "Leu", "L"],
+    "GAT": ["leucine", "Leu", "L"],
+    "GAG": ["leucine", "Leu", "L"],
+    "GAC": ["leucine", "Leu", "L"],
+    "GAA": ["leucine", "Leu", "L"],
+
+    "TTT": ["lysine", "Lys", "K"],
+    "TTC": ["lysine", "Lys", "K"],
+
+    "TAC": ["methionine", "Met", "M"],
+
+    "AAG": ["phenylalanine", "Phe", "F"],
+    "AAA": ["phenylalanine", "Phe", "F"],
+
+    "GGT": ["proline", "Pro", "P"],
+    "GGG": ["proline", "Pro", "P"],
+    "GGC": ["proline", "Pro", "P"],
+    "GGA": ["proline", "Pro", "P"],
+
+    "TCG": ["serine", "Ser", "S"],
+    "TCA": ["serine", "Ser", "S"],
+    "AGT": ["serine", "Ser", "S"],
+    "AGG": ["serine", "Ser", "S"],
+    "AGC": ["serine", "Ser", "S"],
+    "AGA": ["serine", "Ser", "S"],
+
+    "TGT": ["threonine", "Thr", "T"],
+    "TGG": ["threonine", "Thr", "T"],
+    "TGC": ["threonine", "Thr", "T"],
+    "TGA": ["threonine", "Thr", "T"],
+
+    "ACC": ["tryptophan", "Trp", "W"],
+
+    "ATG": ["tyrosine", "Tyr", "Y"],
+    "ATA": ["tyrosine", "Tyr", "Y"],
+
+    "CAT": ["valine", "Val", "V"],
+    "CAG": ["valine", "Val", "V"],
+    "CAC": ["valine", "Val", "V"],
+    "CAA": ["valine", "Val", "V"],
+
+    "NNN": ["x acid", "Xaa", "X"]
+  },
+
+  "RNA": {
+    "GCA": ["alanine", "Ala", "A"],
+    "GCC": ["alanine", "Ala", "A"],
+    "GCG": ["alanine", "Ala", "A"],
+    "GCU": ["alanine", "Ala", "A"],
+
+    "AGA": ["arginine", "Arg", "R"],
+    "AGG": ["arginine", "Arg", "R"],
+    "CGA": ["arginine", "Arg", "R"],
+    "CGC": ["arginine", "Arg", "R"],
+    "CGG": ["arginine", "Arg", "R"],
+    "CGU": ["arginine", "Arg", "R"],
+
+    "AAC": ["asparagine", "Asn", "N"],
+    "AAU": ["asparagine", "Asn", "N"],
+
+    "GAC": ["aspartic acid", "Asp", "D"],
+    "GAU": ["aspartic acid", "Asp", "D"],
+
+    "UGC": ["cysteine", "Cys", "C"],
+    "UGU": ["cysteine", "Cys", "C"],
+
+    "UAA": ["ochre", "TERM", " "],
+    "UAG": ["amber", "TERM", " "],
+    "UGA": ["umber", "TERM", " "],
+
+    "CAA": ["glutamine", "Gln", "Q"],
+    "CAG": ["glutamine", "Gln", "Q"],
+
+    "GAA": ["glutamic acid", "Glu", "E"],
+    "GAG": ["glutamic acid", "Glu", "E"],
+
+    "GGA": ["glycine", "Gly", "G"],
+    "GGC": ["glycine", "Gly", "G"],
+    "GGG": ["glycine", "Gly", "G"],
+    "GGU": ["glycine", "Gly", "G"],
+
+    "CAC": ["histidine", "His", "H"],
+    "CAU": ["histidine", "His", "H"],
+
+    "AUA": ["isoleucine", "Ile", "I"],
+    "AUC": ["isoleucine", "Ile", "I"],
+    "AUU": ["isoleucine", "Ile", "I"],
+
+    "UUA": ["leucine", "Leu", "L"],
+    "UUG": ["leucine", "Leu", "L"],
+    "CUA": ["leucine", "Leu", "L"],
+    "CUC": ["leucine", "Leu", "L"],
+    "CUG": ["leucine", "Leu", "L"],
+    "CUU": ["leucine", "Leu", "L"],
+
+    "AAA": ["lysine", "Lys", "K"],
+    "AAG": ["lysine", "Lys", "K"],
+
+    "AUG": ["methionine", "Met", "M"],
+
+    "UUC": ["phenylalanine", "Phe", "F"],
+    "UUU": ["phenylalanine", "Phe", "F"],
+
+    "CCA": ["proline", "Pro", "P"],
+    "CCC": ["proline", "Pro", "P"],
+    "CCG": ["proline", "Pro", "P"],
+    "CCU": ["proline", "Pro", "P"],
+
+    "AGC": ["serine", "Ser", "S"],
+    "AGU": ["serine", "Ser", "S"],
+    "UCA": ["serine", "Ser", "S"],
+    "UCC": ["serine", "Ser", "S"],
+    "UCG": ["serine", "Ser", "S"],
+    "UCU": ["serine", "Ser", "S"],
+
+    "ACA": ["threonine", "Thr", "T"],
+    "ACC": ["threonine", "Thr", "T"],
+    "ACG": ["threonine", "Thr", "T"],
+    "ACU": ["threonine", "Thr", "T"],
+
+    "UGG": ["tryptophan", "Trp", "W"],
+
+    "UAC": ["tyrosine", "Tyr", "Y"],
+    "UAU": ["tyrosine", "Tyr", "Y"],
+
+    "GUA": ["valine", "Val", "V"],
+    "GUC": ["valine", "Val", "V"],
+    "GUG": ["valine", "Val", "V"],
+    "GUU": ["valine", "Val", "V"],
+
+    "NNN": ["x acid", "Xaa", "X"]
+  }
+}
