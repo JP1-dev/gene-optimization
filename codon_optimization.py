@@ -1,20 +1,22 @@
 import loading
 import json
 
+root = "/home/jp/coding/gene-optimization/"
+
 
 class CodonOptimizer:
     def __init__(self, origin_organism: str, target_organism: str):
-        self.loader = loading.Loader(amino_acid_file="amino_acids.json")
+        self.loader = loading.Loader(amino_acid_file=f"{root}amino_acids.json")
 
-        with open('amino_acids.json', 'r') as file:
+        with open(f'{root}amino_acids.json', 'r') as file:
             self.triplet_codes: dict = json.loads(file.read())
 
         self.origin_name: str = origin_organism
-        self.origin: dict = self.loader.load_codon_usage_table(f'codon_usages/codon_usage_{origin_organism}.csv')
+        self.origin: dict = self.loader.load_codon_usage_table(f'{root}codon_usages/codon_usage_{origin_organism}.csv')
         self.loader.usage_table_to_percentage(self.origin)
 
         self.target_name: str = target_organism
-        self.target: dict = self.loader.load_codon_usage_table(f'codon_usages/codon_usage_{target_organism}.csv')
+        self.target: dict = self.loader.load_codon_usage_table(f'{root}codon_usages/codon_usage_{target_organism}.csv')
         self.loader.usage_table_to_percentage(self.target)
 
     def optimize(self, seq: str, isDNA = False, returnDNA = False) -> str:
@@ -28,9 +30,6 @@ class CodonOptimizer:
             oc_origin = self.origin.get(amino_acid).get(codon_origin)
 
             min_key = codon_origin  # origin used as initial value
-
-            with open('table.json', 'w') as file:
-                file.write(json.dumps(self.target))
 
             for key in self.target[amino_acid].keys():
                 oc_origin = oc_origin
@@ -75,11 +74,11 @@ class CodonOptimizer:
 
     def change_organisms(self, origin_organism: str, target_organism):
         self.origin_name = origin_organism
-        self.origin = self.loader.load_codon_usage_table(f'codon_usages/codon_usage_{origin_organism}.csv')
+        self.origin = self.loader.load_codon_usage_table(f'{root}codon_usages/codon_usage_{origin_organism}.csv')
         self.loader.usage_table_to_percentage(self.origin)
 
         self.target_name = target_organism
-        self.target = self.loader.load_codon_usage_table(f'codon_usages/codon_usage_{target_organism}.csv')
+        self.target = self.loader.load_codon_usage_table(f'{root}codon_usages/codon_usage_{target_organism}.csv')
         self.loader.usage_table_to_percentage(self.target)
 
 
