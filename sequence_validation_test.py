@@ -1,6 +1,6 @@
 import unittest
 import sequence_validation
-
+# Test for sequence validation. Not being used in final project.
 
 class SequenceValidationTest(unittest.TestCase):
     def test_max_length(self):

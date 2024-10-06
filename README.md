@@ -57,13 +57,14 @@ with other codons, which are better suited considering the speed.
 ---
 
 ### Usage
-1. [Open this](https://jojotech.one:4000)
-2. Enter a human DNA sequence in the left text-box (doesn't matter if it represents a real
+1. Run [main_bio.py](main_bio.py) 
+2. [Open this](https://localhost.one:31415)
+3. Enter a human DNA sequence in the left text-box (doesn't matter if it represents a real
 protein or not). In case of pure testing, the example button can be clicked
 and the DNA-sequence of Hemoglobin (iron transporter) will be shown in the box.
-3. Choose a destination organism, meanwhile only Escherichia coli K12 
+4. Choose a destination organism, meanwhile only Escherichia coli K12 
 is supported, because it's mostly used for protein production.
-4. Click on optimize. The DNA-sequence will be sent to the server which will
+5. Click on optimize. The DNA-sequence will be sent to the server which will
 try to change some codons to make the speeds at every production step in 
 E. coli K12 as close as possible to the speeds of the host organism 
 Homo sapiens. 

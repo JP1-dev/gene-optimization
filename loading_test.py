@@ -1,6 +1,6 @@
 import unittest
 import loading
-
+# Test for loading table of amino acid and codon usage. Not being used in final project.
 
 class LoadingTest(unittest.TestCase):
     def test_1(self):

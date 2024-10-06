@@ -1,10 +1,11 @@
 import loading
 import json
 
-root = "/home/jp/coding/gene-optimization/"
+root = "" # Add filepath prefix if needed
 
 
 class CodonOptimizer:
+
     def __init__(self, origin_organism: str, target_organism: str):
         self.loader = loading.Loader(amino_acid_file=f"{root}amino_acids.json")
 
@@ -20,11 +21,18 @@ class CodonOptimizer:
         self.loader.usage_table_to_percentage(self.target)
 
     def optimize(self, seq: str, isDNA = False, returnDNA = False) -> str:
+        """
+        Optimize the sequence given, transcribing it and returning the new sequence.
+        :param seq: String of gene sequence
+        :param isDNA: Default = False
+        :param returnDNA: Default = False
+        :return: string of sequence
+        """
         if isDNA:
             seq = self.transcription(seq)
 
         new_sequence = []
-        for i in range(0, len(seq), 3):
+        for i in range(0, len(seq), 3): # iterating through tripplets (codons each having 3 acids)
             codon_origin = seq[i: i+3]
             amino_acid = self.triplet_codes["RNA"].get(codon_origin)[0]
             oc_origin = self.origin.get(amino_acid).get(codon_origin)
@@ -51,6 +59,13 @@ class CodonOptimizer:
 
     @staticmethod
     def transcription(seq: str) -> str:
+        f"""
+        The transcription is the part of the protein bio synthesis where DNA is turned to RNA.\n
+        DNA and RNA use different acids (instead of Adenin[A] Uracil[U]) and use the opposite acid (C to G).\n
+
+        :param seq:  DNA sequence
+        :return: DNA sequence as RNA sequence
+        """
         seq = seq.upper()
         seq = seq.replace('A', 'U')
         seq = seq.replace('T', 'A')
@@ -61,6 +76,14 @@ class CodonOptimizer:
 
     @staticmethod
     def reverse_transcription(seq: str) -> str:
+        f"""
+        The reverse transcription is the part of the protein bio synthesis where RNA is turned to DNA.\n
+        DNA and RNA use different acids (instead of Adenin[A] Uracil[U]) and use the opposite acid (C to G).\n
+        Not all cells use reverse transcription. It is mainly being used by viruses and some bacteria.\n
+
+        :param seq: RNA sequence
+        :return: RNA sequence as DNA sequence
+        """
         seq = seq.upper()
         seq = seq.replace('A', 'T')
         seq = seq.replace('C', 'X') # X as temporary G
@@ -69,8 +92,6 @@ class CodonOptimizer:
         seq = seq.replace('U', 'A')
         return seq
 
-    def get_current_setup(self) -> tuple[str, str]:
-        return self.origin_name, self.target_name
 
     def change_organisms(self, origin_organism: str, target_organism):
         self.origin_name = origin_organism

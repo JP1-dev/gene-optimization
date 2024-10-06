@@ -2,6 +2,7 @@ import codon_optimization
 import sequence_validation
 import argparse
 import os
+# TODO(Documentation)
 
 MAX_SEQ_LENGTH = 1000000000000
 

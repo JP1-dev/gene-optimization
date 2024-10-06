@@ -1,5 +1,8 @@
 
 class SeqValidator:
+    """
+        Class for validating sequences. Use function .validate for usage.
+    """
     def __init__(self,
                  mode: str,
                  div_by_3: bool,
@@ -12,6 +15,14 @@ class SeqValidator:
         self.max_len = max_length
 
     def validate(self, sequence: str) -> bool:
+        f"""
+            Validation of inputted sequences.\n 
+            Parameter: sequence(String)\n
+            Output: boolean\n
+            Checks if decidable through 3 (tripplets), max length, valid DNA acids and valid RNA acids. 
+
+        """
+
         validation = True
 
         length = len(sequence)

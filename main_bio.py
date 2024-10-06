@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import sequence_validation
 import codon_optimization
-
+# Main file, backend of website
 app = Flask(__name__)
 
 validator = sequence_validation.SeqValidator("DNA", True, True, 1000000)
@@ -17,8 +17,8 @@ def index():
 @app.post('/optimize')
 def optimize():
     sequence = request.json.get('data')
+
     if sequence is not None:
-        # print(sequence)
         sequence = str(sequence).strip()
         if validator.validate(sequence):
             return optimizer.optimize(sequence, isDNA=True, returnDNA=True)

@@ -1,5 +1,6 @@
 import unittest
 import codon_optimization
+# Test for codon optimization. Not being used in final project.
 
 
 class CodonOptimizationTest(unittest.TestCase):
